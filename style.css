@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Century Goethic, Opensans, Venda;
+    background-color: #F4F4F4;
+}
+
+.bg-index {
+    background-image: url(portrait-kamera.png);
+    z-index: -1;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logoheader {
+    right: 5%;
+    height: 30%;
+    padding-top: 5em;
+    padding-left: 1em;
+    position: absolute;
+
+}
+
+.txt-startseite {
+    margin-top: 3em;
+    margin-left: 3em;
+    margin-right: 80%;
+    position: absolute;
+}
+
+h1, hr, p {
+    color: #707070;
+}
+
+/* Anpassen*/
+.w30p {
+    width: 30%;
+}
+
+.w40p {
+    width: 40%;
+}
+
+.w50p {
+    width: 50%;
+}
+
+.w60p {
+    width: 60%;
+}
+
+.w70p {
+    width: 70%;
+}
+
+.w100p {
+    width: 100%;
+}
+
+.plr10p {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+
+.self-center {
+    align-self: center;
+}
+
+.only-mobile {
+    display: none;
+}
+.text-center{
+    text-align: center;
+}
+
+.highlight{
+    text-decoration: underline;
+    color:red;
+}
+
+/* Mobile */
+@media screen and (max-width: 830px) {
+    .bg-index {
+        height: 40%;
+    }
+
+    
+    .bg-sehenswuerdigkeiten {
+        height: 40%;
+    }  
+    
+    .bg-kontakt {
+        height: 40%;
+    } 
+    
+    .bg-grandtour {
+        height: 40%;
+    } 
+    
+    .bg {
+        height: 30%;
+    }
+    
+    header > img {
+        height: 15%;
+    }
+
+    footer{
+        height: 100px;
+    }
+
+    .only-mobile {
+        display: block;
+    }
+
+    .not-on-mobile {
+        display: none;
+    }
+
+    .mt50 {
+        margin-top: 20px;
+    }
+
+    nav > div > a {
+        padding: 5px;
+        width: 50%;
+        background-color: unset;
+    }
+
+    .mobile-order-1 {
+        order: 1;
+    }
+
+    .mobile-order-2 {
+        order: 2;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .w30p {
+        width: 100%;
+    }
+
+    .w40p {
+        width: 100%;
+    }
+
+    .w50p {
+        width: 100%;
+    }
+
+    .w60p {
+        width: 100%;
+    }
+
+    .w70p {
+        width: 100%;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .map1 {
+        width: 100%;
+        height: 300px;
+    }
+
+    h1 {
+
+        position: relative;
+
+        font-size: 200%;
+        text-align: center;
+        right: 0;
+        margin-top: 0.1em;
+    }
+
+    .flex-row {
+        flex-direction: row;
+    }
+    
+    .logoheader {
+        padding-top: 6em;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 831px) {
+    h1 {
+        font-size: 4em;
+    }
+}
