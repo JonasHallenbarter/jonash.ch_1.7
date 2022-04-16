@@ -30,6 +30,25 @@
         <span id="accept"><a href="javascript:void(0)" title="Akzeptieren">Akzeptieren</a></span>
       </div>
 
+      <script>
+        
+        var footerCookie = document.querySelector("#footer-cookie");
+        var footerCookieAccept = document.querySelector("#accept");
+    
+        if (document.cookie.indexOf("CookieBanner=") == -1) {
+          footerCookie.style.display = "block";
+        }
+    
+        footerCookieAccept.onclick = function(e) {
+          var cookieDate = new Date();
+          cookieDate.setTime(new Date().getTime() + 31104000000);
+    
+          document.cookie = "CookieBanner = 1; path=/; secure; expires=" + cookieDate.toUTCString();
+    
+          footerCookie.style.display = "none";
+        };
+      </script>
+
     <header class="bg-index">
             <a id="logoid"><img class="logoheader" src="logo_450px.png" alt="logo"></a>
         
